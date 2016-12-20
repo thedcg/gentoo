@@ -18,6 +18,7 @@ RUN date --iso-8601=ns\
  && rm -f /portage-latest.tar.bz2\
 # && emerge --sync\
 # && emerge --metadata\
+ && emerge --update --deep @world\
  && emerge app-portage/gentoolkit\
  && date --iso-8601=ns
 
