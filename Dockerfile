@@ -19,6 +19,8 @@ RUN date --iso-8601=ns\
 # && emerge --sync\
 # && emerge --metadata\
  && emerge app-portage/gentoolkit\
+ && echo '======== equery list * ========'\
+ && equery list '*'\
  && date --iso-8601=ns
 
 # 終了
